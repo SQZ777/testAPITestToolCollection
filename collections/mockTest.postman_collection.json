@@ -1,0 +1,109 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mockTest",
+		"_postman_id": "b18413fc-1040-6e84-c3d5-643e554044d8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "a2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://{{url}}.mockable.io/a2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "mocka1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://{{url}}.mockable.io/a1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "mock a1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://mobilewebmall.tw.qa/WebAPI/SalePageV2/GetSalePageV2Info/64/93422?r=f",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "http://mobilewebmall.tw.qa/WebAPI/SalePageV2/GetSalePageV2Info/64/93422?r=f",
+					"protocol": "http",
+					"host": [
+						"mobilewebmall",
+						"tw",
+						"qa"
+					],
+					"path": [
+						"WebAPI",
+						"SalePageV2",
+						"GetSalePageV2Info",
+						"64",
+						"93422"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "f",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "內部API測試"
+			},
+			"response": []
+		}
+	]
+}
